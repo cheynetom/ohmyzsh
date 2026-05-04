@@ -8,6 +8,7 @@ fi
 
 # Path to your oh-my-zsh installation.
 export ZSH=$HOME/.config/ohmyzsh
+export PATH=$PATH:/$HOME/.local/bin
 
 #set vim as editor
 export EDITOR=/bin/vim
