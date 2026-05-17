@@ -45,7 +45,16 @@ plugins=(aliases\
 	zsh-navigation-tools\
        	zsh-syntax-highlighting\
 )
+
+#custom completions
+
+
 source $ZSH/custom/plugins/zsh-completion-generator/zsh-completion-generator.plugin.zsh
+
+#zsh-completion-generator targets
+zstyle :plugin:zsh-completion-generator programs opencode netbird lemonade flm xrt-smi
+
+
 source $ZSH/oh-my-zsh.sh
 
 
@@ -133,3 +142,6 @@ source $ZSH/custom/dircolors.zsh
 
 #set tmux alias to create per container sockets
 alias tmux="tmux -L ${USER}_${CONTAINER_NAME}"
+
+#custom completions
+source $ZSH_CUSTOM/completions/*.zsh
